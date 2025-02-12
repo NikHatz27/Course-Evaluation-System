@@ -13,7 +13,7 @@
     <img src="assets/images/logo.png" alt="CourseR8 Logo">  
     <form action="authentication/login_process.php" method = "post">
     <label for="username">Username:</label>
-    <input type="username" name="email" required>
+    <input type="username" name="username" required>
     <label for="password">Password:</label>
     <input type="password" name="password" required>
     <button type="submit">Login</button>
