@@ -1,6 +1,6 @@
 <?php
 
-include_once 'DB_connection.php';
+require 'DB_connection.php';
 
 function generateRandomString($length = 10) {
     return substr(str_shuffle('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'), 0, $length);

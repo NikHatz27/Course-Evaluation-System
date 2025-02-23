@@ -11,7 +11,14 @@
 <body>
     <main>
     <img src="assets/images/logo.png" alt="CourseR8 Logo">  
-    <form action="authentication/login_process.php" method = "post">
+    <?php
+        session_start();
+        if (isset($_SESSION['error'])) {
+            echo '<p style="color: red;">' . $_SESSION['error'] . '</p>';
+            unset($_SESSION['error']); 
+        }
+    ?>
+    <form action="../authentication/login_process.php" method = "post">
     <label for="username">Username:</label>
     <input type="username" name="username" required>
     <label for="password">Password:</label>
