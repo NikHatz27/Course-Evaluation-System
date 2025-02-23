@@ -9,6 +9,7 @@ CREATE TABLE users (
     role VARCHAR(255) NOT NULL
 );
 
+--ratings table
 CREATE TABLE ratings (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -18,6 +19,7 @@ CREATE TABLE ratings (
     FOREIGN KEY (course_id) REFERENCES courses(id) 
 );
 
+--courses tablee
 CREATE TABLE courses (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL
