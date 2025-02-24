@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CourseR8</title>
-    <link rel="stylesheet" type="text/css" href="assets/index_styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/index_styles.css">
 
 
 </head>
 <body>
     <main>
-    <img src="assets/images/logo.png" alt="CourseR8 Logo">  
+    <img src="../assets/images/logo.png" alt="CourseR8 Logo">  
     <?php
         session_start();
         if (isset($_SESSION['error'])) {
