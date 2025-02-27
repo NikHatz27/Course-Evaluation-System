@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
             <button type="submit" name="logout" class="logout-button">Logout</button>
         </form>
 
-        <h1>Admin Dashboard</h1>
+        <h1>Admin Panel</h1>
 
     
         <form action="admin_processes/insert.php" method="POST">
@@ -55,10 +55,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['logout'])) {
                 foreach ($courses as $course) {
                     $averageRating = $course['average_rating'] ? round($course['average_rating'], 1) : 'No ratings yet';
                     echo "<div class='course-item'>
-                            <span>{$course['name']} <strong>(Rating: {$averageRating})</strong></span>
+                            <span>{$course['name']} <strong>(Rating: {$averageRating}/5)</strong></span>
                             <form action='admin_processes/delete.php' method='POST' style='display:inline;'>
                                 <input type='hidden' name='id' value='{$course['id']}'>
-                                <button type='submit'>Delete</button>
+                                <button tyep='submit'>Delete</button>
                             </form>
                           </div>";
                 }
